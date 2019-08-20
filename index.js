@@ -1,8 +1,5 @@
 function takeANumber(line, name){
   line.push(name);
-  
-  console.log("Welcome, " + name + ". You are number " + line.length + " in line.");
-  
   return "Welcome, " + name + ". You are number " + line.length + " in line."
 }
 function nowServing(line) {
@@ -20,6 +17,7 @@ function currentLine(Aline){
   return "The line is currently empty."
     }
 else {
+  
 for (var i = 0; i < Aline.length; i++) {
   line.push(i + 1 + "." + ' ' +  Aline[i] )
 
@@ -28,4 +26,13 @@ for (var i = 0; i < Aline.length; i++) {
       return text + line.join(', ')
     }
 }
+var number = (1);
+function GiveANumber(line) {
+  line.push(number)
+  number++// number = number +1
+
+  return `You are ${number}`
+}
+  
+
     
